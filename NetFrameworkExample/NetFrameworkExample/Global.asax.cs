@@ -18,6 +18,12 @@ namespace NetFrameworkExample
 	    FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 	    RouteConfig.RegisterRoutes(RouteTable.Routes);
 	    BundleConfig.RegisterBundles(BundleTable.Bundles);
+	    this.AuthenticateRequest += ctx_AuthRequest;
+	}
+
+	void ctx_AuthRequest(object sender, EventArgs e)
+	{
+	    // Handle event.
 	}
     }
 }
