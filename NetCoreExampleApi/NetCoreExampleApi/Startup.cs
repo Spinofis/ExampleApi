@@ -37,10 +37,9 @@ namespace NetCoreExampleApi
 	    //app.UseCustomResponseWithNext();
 	    //app.Map("/map1", MiddlewareTest.HandleMap1);
 	    //app.Map("/map2", MiddlewareTest.HandleMap2);
-	    app.Map("/map1/seg1", MiddlewareTest.HandleMapWithMultipleSegements);
+	    //app.Map("/map1/seg1", MiddlewareTest.HandleMapWithMultipleSegements);
 	    //app.MapWhen(context => context.Request.Query.ContainsKey("branch"), MiddlewareTest.HandleMapWhen);
-	    app.UseWhen(context => context.Request.Query.ContainsKey("branch"), MiddlewareTest.HandleUseWhen);
-
+	    //app.UseWhen(context => context.Request.Query.ContainsKey("branch"), MiddlewareTest.HandleUseWhen);
 	    if (env.IsDevelopment())
 	    {
 		app.UseDeveloperExceptionPage();
