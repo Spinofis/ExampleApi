@@ -14,62 +14,74 @@ namespace NetCoreExampleApi.Controllers
     [ApiController]
     public class TestConfigController : ControllerBase
     {
-	private readonly IConfiguration _configuration;
-	
-	private readonly PostionOptions _postionOptions;
+        private readonly IConfiguration _configuration;
 
-	public TestConfigController(IConfiguration configuration, IOptions<PostionOptions> postionOptions) 
-	{
-	    _configuration = configuration;
-	    _postionOptions = postionOptions.Value;
-	}
+        private readonly PostionOptions _postionOptions;
 
-	[HttpGet("position/bind")]
-	public IActionResult GetBindedPosition() 
-	{
-	    var positionOptions = new PostionOptions();
-	    _configuration.GetSection(PostionOptions.Position).Bind(positionOptions);
+        public TestConfigController(IConfiguration configuration, IOptions<PostionOptions> postionOptions)
+        {
+            _configuration = configuration;
+            _postionOptions = postionOptions.Value;
+        }
 
-	    return Ok($"Title: {positionOptions.Title} \n" +
-		      $"Name: {positionOptions.Name}");
-	}
+        [HttpGet("position/bind")]
+        public IActionResult GetBindedPosition()
+        {
+            var positionOptions = new PostionOptions();
+            _configuration.GetSection(PostionOptions.Position).Bind(positionOptions);
 
-	[HttpGet("position/bind-in-di-service")]
-	public IActionResult GetBindedPositionFromService() 
-	{
-	    return Ok($"Title: {_postionOptions.Title} \n" +
-		      $"Name: {_postionOptions.Name}");
-	}
+            return Ok($"Title: {positionOptions.Title} \n" +
+                  $"Name: {positionOptions.Name}");
+        }
 
-	[HttpGet]
-	public IEnumerable<string> Get()
-	{
-	    return new string[] { "value1", "value2" };
-	}
+        [HttpGet("position/bind-in-di-service")]
+        public IActionResult GetBindedPositionFromService()
+        {
+            return Ok($"Title: {_postionOptions.Title} \n" +
+                  $"Name: {_postionOptions.Name}");
+        }
 
-	// GET api/<TestConfigController>/5
-	[HttpGet("{id}")]
-	public string Get(int id)
-	{
-	    return "value";
-	}
+        [HttpGet("env/test-env")]
+        public IActionResult GetTestEnviVariable() 
+        {
+            return Ok(Environment.GetEnvironmentVariable("TEST_ENV"));
+        }
 
-	// POST api/<TestConfigController>
-	[HttpPost]
-	public void Post([FromBody] string value)
-	{
-	}
+        [HttpGet("env/config-test-env1")]
+        public IActionResult GetTestConfigVariable()
+        {
+            return Ok(_configuration["test_env1"]);
+        }
 
-	// PUT api/<TestConfigController>/5
-	[HttpPut("{id}")]
-	public void Put(int id, [FromBody] string value)
-	{
-	}
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "value1", "value2" };
+        }
 
-	// DELETE api/<TestConfigController>/5
-	[HttpDelete("{id}")]
-	public void Delete(int id)
-	{
-	}
+        // GET api/<TestConfigController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "value";
+        }
+
+        // POST api/<TestConfigController>
+        [HttpPost]
+        public void Post([FromBody] string value)
+        {
+        }
+
+        // PUT api/<TestConfigController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
+        {
+        }
+
+        // DELETE api/<TestConfigController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
     }
 }

@@ -14,6 +14,8 @@ namespace NetCoreExampleApi
 	public static void Main(string[] args)
 	{
 	    CreateHostBuilder(args).Build().Run();
+
+			var environment = Environment.GetEnvironmentVariable("test_env1");
 	}
 
 	public static IHostBuilder CreateHostBuilder(string[] args) =>
