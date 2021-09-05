@@ -13,18 +13,18 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
-      "environmentVariables": {
-        "TEST_ENV": "TEST_ENV",
-        "ASPNETCORE_ENVIRONMENT": "Staging"
-      }
+			"environmentVariables": {
+				"TEST_ENV": "TEST_ENV",
+				"ASPNETCORE_ENVIRONMENT": "CustomEnv"
+			}
     },
     "NetCoreExampleApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Staging"
-      },
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "CustomEnv"
+			},
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     }
   }

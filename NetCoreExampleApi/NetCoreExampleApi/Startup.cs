@@ -51,6 +51,13 @@ namespace NetCoreExampleApi
 
 	    app.UseAuthorization();
 
+	    // app.UseSession();
+	    // app.UseResponseCompression();
+	    // app.UseResponseCaching();
+	    // app.UseRequestLocalization();
+	    // app.UseCors();
+	    // app.UseCookiePolicy();
+
 	    app.UseEndpoints(endpoints =>
 	    {
 		endpoints.MapControllers();

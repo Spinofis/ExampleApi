@@ -14,16 +14,17 @@ namespace NetFrameworkExample
 	public void Configuration(IAppBuilder app)
 	{
 	    //New code:
-	 //   app.Use((context, next) =>
-	 //   {
-		//PrintCurrentIntegratedPipelineStage(context, "Middleware 1");
-		//return next.Invoke();
-	 //   });
+	    //   app.Use((context, next) =>
+	    //   {
+	    //PrintCurrentIntegratedPipelineStage(context, "Middleware 1");
+	    //return next.Invoke();
+	    //   });
 	    //   app.Run(context =>
 	    //   {
 	    //context.Response.ContentType = "text/plain";
 	    //return context.Response.WriteAsync("Hello, world.");
 	    //   });
+	    //app.MapWhen((context) => { return true; },(builder) => { });
 	}
 
 	private void PrintCurrentIntegratedPipelineStage(IOwinContext context, string msg)
