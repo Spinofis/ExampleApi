@@ -5,10 +5,7 @@ using System.Threading.Tasks;
 
 namespace NetCoreExampleApi.BusinessLogic
 {
-    public class TestService : ITestService
+    public class TestService2
     {
-        public TestService(TestService2 testService2) { }
-
-        public TestService(int x) { }
     }
 }

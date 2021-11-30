@@ -29,10 +29,10 @@ namespace NetCoreExampleApi.Controllers
         {
             var positionOptions = new PostionOptions();
             _configuration.GetSection(PostionOptions.Position).Bind(positionOptions);
-
             return Ok($"Title: {positionOptions.Title} \n" +
                   $"Name: {positionOptions.Name}");
         }
+
 
         [HttpGet("position/bind-in-di-service")]
         public IActionResult GetBindedPositionFromService()

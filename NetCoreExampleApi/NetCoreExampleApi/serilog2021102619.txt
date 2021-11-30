@@ -1,0 +1,74 @@
+2021-10-26 19:00:27.088 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-26 19:00:27.167 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-26 19:00:27.168 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-26 19:05:53.217 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-26 19:05:53.262 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-26 19:05:53.263 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-26 19:06:16.385 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/api/TestConfig/position/bind  
+2021-10-26 19:06:16.408 +02:00 [ERR] Connection ID "18374686524231909379", Request ID "80000004-000a-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+NetCoreExampleApi.Controllers.TestConfigController.GetBindedPosition (NetCoreExampleApi)
+NetCoreExampleApi.Controllers.TestConfigController.GetBindedPosition2 (NetCoreExampleApi)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Hosting.HostingApplication.ProcessRequestAsync(Context context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-10-26 19:06:16.504 +02:00 [INF] Request finished in 124.958ms 500 
+2021-10-26 19:06:30.582 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-26 19:06:30.624 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-26 19:06:30.625 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-26 19:06:44.258 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/api/TestConfig/position/bind  
+2021-10-26 19:06:44.260 +02:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.TestConfigController.GetBindedPosition (NetCoreExampleApi)'
+2021-10-26 19:06:44.262 +02:00 [INF] Route matched with {action = "GetBindedPosition", controller = "TestConfig"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBindedPosition() on controller NetCoreExampleApi.Controllers.TestConfigController (NetCoreExampleApi).
+2021-10-26 19:06:44.279 +02:00 [INF] Executing action method NetCoreExampleApi.Controllers.TestConfigController.GetBindedPosition (NetCoreExampleApi) - Validation state: "Valid"
+2021-10-26 19:06:44.282 +02:00 [INF] Executed action method NetCoreExampleApi.Controllers.TestConfigController.GetBindedPosition (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5576ms.
+2021-10-26 19:06:44.290 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-10-26 19:06:44.292 +02:00 [INF] Executed action NetCoreExampleApi.Controllers.TestConfigController.GetBindedPosition (NetCoreExampleApi) in 30.609ms
+2021-10-26 19:06:44.292 +02:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.TestConfigController.GetBindedPosition (NetCoreExampleApi)'
+2021-10-26 19:06:44.293 +02:00 [INF] Request finished in 35.9758ms 200 text/plain; charset=utf-8
+2021-10-26 19:14:43.467 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-26 19:14:43.510 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-26 19:14:43.511 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-26 19:15:03.797 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-26 19:15:03.837 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-26 19:15:03.838 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-26 19:15:23.762 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-26 19:15:23.803 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-26 19:15:23.804 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-26 19:39:30.055 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-26 19:39:30.097 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-26 19:39:30.098 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-26 19:42:19.272 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/api/testrouting/foo/my/path  
+2021-10-26 19:42:19.297 +02:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.TestRoutingController.Foo (NetCoreExampleApi)'
+2021-10-26 19:42:19.304 +02:00 [INF] Route matched with {action = "Foo", controller = "TestRouting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Foo(System.String) on controller NetCoreExampleApi.Controllers.TestRoutingController (NetCoreExampleApi).
+2021-10-26 19:42:19.326 +02:00 [INF] Executing action method NetCoreExampleApi.Controllers.TestRoutingController.Foo (NetCoreExampleApi) - Validation state: "Valid"
+2021-10-26 19:42:19.328 +02:00 [INF] Executed action method NetCoreExampleApi.Controllers.TestRoutingController.Foo (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.1738ms.
+2021-10-26 19:42:19.328 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-10-26 19:42:19.331 +02:00 [INF] Executed action NetCoreExampleApi.Controllers.TestRoutingController.Foo (NetCoreExampleApi) in 26.2531ms
+2021-10-26 19:42:19.331 +02:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.TestRoutingController.Foo (NetCoreExampleApi)'
+2021-10-26 19:42:19.339 +02:00 [INF] Request finished in 73.4317ms 200 text/plain; charset=utf-8
+2021-10-26 19:42:24.750 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/api/testrouting/foo2/my/path  
+2021-10-26 19:42:24.752 +02:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi)'
+2021-10-26 19:42:24.756 +02:00 [INF] Route matched with {action = "Foo2", controller = "TestRouting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Foo2(System.String) on controller NetCoreExampleApi.Controllers.TestRoutingController (NetCoreExampleApi).
+2021-10-26 19:42:24.770 +02:00 [INF] Executing action method NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi) - Validation state: "Valid"
+2021-10-26 19:42:24.770 +02:00 [INF] Executed action method NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.1054ms.
+2021-10-26 19:42:24.771 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-10-26 19:42:24.773 +02:00 [INF] Executed action NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi) in 15.5058ms
+2021-10-26 19:42:24.773 +02:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi)'
+2021-10-26 19:42:24.812 +02:00 [INF] Request finished in 62.025ms 200 text/plain; charset=utf-8
+2021-10-26 19:42:31.484 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/api/testrouting/foo2/my/path  
+2021-10-26 19:42:31.484 +02:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi)'
+2021-10-26 19:42:31.484 +02:00 [INF] Route matched with {action = "Foo2", controller = "TestRouting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Foo2(System.String) on controller NetCoreExampleApi.Controllers.TestRoutingController (NetCoreExampleApi).
+2021-10-26 19:42:31.498 +02:00 [INF] Executing action method NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi) - Validation state: "Valid"
+2021-10-26 19:42:31.498 +02:00 [INF] Executed action method NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.032ms.
+2021-10-26 19:42:31.498 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-10-26 19:42:31.499 +02:00 [INF] Executed action NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi) in 14.5328ms
+2021-10-26 19:42:31.499 +02:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.TestRoutingController.Foo2 (NetCoreExampleApi)'
+2021-10-26 19:42:31.499 +02:00 [INF] Request finished in 15.937ms 200 text/plain; charset=utf-8

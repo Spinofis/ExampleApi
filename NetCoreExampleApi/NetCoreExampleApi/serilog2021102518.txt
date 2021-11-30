@@ -1,0 +1,17 @@
+2021-10-25 18:55:09.628 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-25 18:55:09.718 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-25 18:55:09.719 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-25 18:55:10.108 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/favicon.ico  
+2021-10-25 18:55:10.110 +02:00 [INF] Request finished in 3.0034ms 404 
+2021-10-25 18:55:57.999 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-25 18:55:58.041 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-25 18:55:58.043 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-25 18:56:45.527 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-25 18:56:45.569 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-25 18:56:45.570 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-25 18:57:09.452 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-25 18:57:09.499 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-25 18:57:09.500 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2021-10-25 18:57:55.790 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-25 18:57:55.833 +02:00 [INF] Hosting environment: CustomEnv
+2021-10-25 18:57:55.834 +02:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
