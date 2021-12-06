@@ -29,6 +29,7 @@ namespace NetCoreExampleApi
             services.AddControllers();
             services.AddConfigOptions(Configuration);
             services.AddTestServices();
+            services.AddSwaggerGen();
             services.AddExampleDbContext(Configuration);
         }
 
@@ -46,14 +47,17 @@ namespace NetCoreExampleApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            app.UseEndpoints(endpoints => endpoints.MapControllers());
             app.UseAuthorization();
 
+
+            app.UseSwagger();
+            app.UseSwaggerUI(options => { options.SwaggerEndpoint("swagger/v1/swagger.json", "v1"); options.RoutePrefix = string.Empty; });
             // app.UseSession();
             // app.UseResponseCompression();
             // app.UseResponseCaching();
@@ -61,15 +65,15 @@ namespace NetCoreExampleApi
             // app.UseCors();
             // app.UseCookiePolicy();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
 
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello world!");
-                });
-            });
+            //    endpoints.MapGet("/", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Hello world!");
+            //    });
+            //});
 
         }
     }

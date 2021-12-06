@@ -18,6 +18,8 @@ namespace NetCoreExampleApi
             services.AddScoped<ITestService, TestService>(); // y y n
             services.AddScoped<ITestService>((serviceProvider) => new TestService(3)); //  y y y
             services.AddScoped<TestService>(); //y n n
+
+            services.AddScoped<IEntityFrameworkTests, EntityFrameworkTests>();
         }
 
         public static void AddConfigOptions(this IServiceCollection services, IConfiguration configuration)
@@ -25,7 +27,7 @@ namespace NetCoreExampleApi
             services.Configure<PostionOptions>(configuration.GetSection(PostionOptions.Position));
         }
 
-        public static void AddExampleDbContext(this IServiceCollection services, IConfiguration configuration) 
+        public static void AddExampleDbContext(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ExampleContext>
                 (options => options.UseSqlServer(configuration.GetConnectionString("ExampleConnection")));
