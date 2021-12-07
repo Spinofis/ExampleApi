@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DatabaseExample
 {
-    public class ExampleDbContext : DbContext
+    public class ExampleContext : DbContext
     {
-        public ExampleDbContext() : base("ExampleDbConnectionString") { }
+        public ExampleContext() : base("ExampleDbConnectionString") { }
 
-        public List<BankAccount> BankAccounts { get; set; }
+        public DbSet<BankAccount> BankAccounts { get; set; }
     }
 }

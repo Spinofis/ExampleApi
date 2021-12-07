@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9A51B8FD-4A31-4275-A123-E2B76FF71E2B}</ProjectGuid>
+    <ProjectGuid>{8F51B7E5-3D2A-4145-8B6A-0DFE5FCC51AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DatabaseExample</RootNamespace>
@@ -52,10 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
-    <Compile Include="ExampleDbContext.cs" />
-    <Compile Include="Migrations\202112061646588_Initial.cs" />
-    <Compile Include="Migrations\202112061646588_Initial.designer.cs">
-      <DependentUpon>202112061646588_Initial.cs</DependentUpon>
+    <Compile Include="ExampleContext.cs" />
+    <Compile Include="Migrations\202112071813551_Initial.cs" />
+    <Compile Include="Migrations\202112071813551_Initial.designer.cs">
+      <DependentUpon>202112071813551_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,8 +65,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202112061646588_Initial.resx">
-      <DependentUpon>202112061646588_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202112071813551_Initial.resx">
+      <DependentUpon>202112071813551_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
