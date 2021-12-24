@@ -7,6 +7,7 @@ namespace NetCoreExampleApi.BusinessLogic
 {
     public interface IEntityFrameworkTests
     {
-        Task TestConccurencyUpdate(decimal amount, int waitBeforeUpdateMs);
+        Task UpdateProduct(int productId, int quantity, int waitBeforeUpdateMs);
+        Task AddAmount(int accountId, decimal amount, int waitBeforeUpdateMs);
     }
 }

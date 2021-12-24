@@ -16,10 +16,17 @@ namespace NetCoreExampleApi.Controllers
 
         public EntityFrameworkTestsController(IEntityFrameworkTests tests) { efTests = tests; }
 
-        [HttpGet("test-concurrent-update/{amount}/{waitBeforeUpdateMs}")]
-        public async Task<IActionResult> TestConCurrentUpdate(decimal amount, int waitBeforeUpdateMs)
+        [HttpPatch("add-amount/{accountId}/{amount}/{waitBeforeUpdateMs}")]
+        public async Task<IActionResult> AddAmount(int accountId, decimal amount, int waitBeforeUpdateMs)
         {
-            await efTests.TestConccurencyUpdate(amount, waitBeforeUpdateMs);
+            await efTests.AddAmount(accountId, amount, waitBeforeUpdateMs);
+            return Ok();
+        }
+
+        [HttpPatch("update-product/{productId}/{quantity}/{waitBeforeUpdateMs}")]
+        public async Task<IActionResult> UpdateQuantity(int productId, int quantity, int waitBeforeUpdateMs)
+        {
+            await efTests.UpdateProduct(productId, quantity, waitBeforeUpdateMs);
             return Ok();
         }
     }

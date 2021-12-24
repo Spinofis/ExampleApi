@@ -12,5 +12,6 @@ namespace DatabaseExample
         public ExampleContext() : base("ExampleDbConnectionString") { }
 
         public DbSet<BankAccount> BankAccounts { get; set; }
+        public DbSet<Product> Product { get; set; }
     }
 }

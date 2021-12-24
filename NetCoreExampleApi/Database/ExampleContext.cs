@@ -10,5 +10,7 @@ namespace Database
         public ExampleContext(DbContextOptions<ExampleContext> options) : base(options) { }
 
         public DbSet<BankAccount> BankAccount { get; set; }
+        public DbSet<Product> Product { get; set; }
+
     }
 }

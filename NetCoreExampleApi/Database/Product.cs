@@ -5,14 +5,11 @@ using System.Text;
 
 namespace Database
 {
-    public class BankAccount
+    public class Product
     {
         public int Id { get; set; }
-
-        public string Number { get; set; }
-
-        public decimal Balance { get; set; }
-        [Timestamp]
-        public byte[] RowVersion { get; set; }
+        public string Name { get; set; }
+        [ConcurrencyCheck]
+        public int Quantity { get; set; }
     }
 }

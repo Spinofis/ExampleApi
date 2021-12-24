@@ -52,10 +52,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
+    <Compile Include="Migrations\202112081747542_Product.cs" />
+    <Compile Include="Migrations\202112081747542_Product.designer.cs">
+      <DependentUpon>202112081747542_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112081751075_Product2.cs" />
+    <Compile Include="Migrations\202112081751075_Product2.designer.cs">
+      <DependentUpon>202112081751075_Product2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
     <Compile Include="ExampleContext.cs" />
     <Compile Include="Migrations\202112071813551_Initial.cs" />
     <Compile Include="Migrations\202112071813551_Initial.designer.cs">
       <DependentUpon>202112071813551_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112081733533_BankAccountRowVersion.cs" />
+    <Compile Include="Migrations\202112081733533_BankAccountRowVersion.designer.cs">
+      <DependentUpon>202112081733533_BankAccountRowVersion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +80,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202112071813551_Initial.resx">
       <DependentUpon>202112071813551_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112081733533_BankAccountRowVersion.resx">
+      <DependentUpon>202112081733533_BankAccountRowVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112081747542_Product.resx">
+      <DependentUpon>202112081747542_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112081751075_Product2.resx">
+      <DependentUpon>202112081751075_Product2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

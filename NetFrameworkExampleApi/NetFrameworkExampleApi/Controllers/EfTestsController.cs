@@ -13,11 +13,19 @@ namespace NetFrameworkExampleApi.Controllers
         private EFtestsService efTestsService = new EFtestsService();
 
 
-        [HttpGet]
-        [Route("test-concurrent-update/{amount}/{waitBeforeUpdateMs}")]
-        public async Task<IHttpActionResult> TestConCurrentUpdate(decimal amount, int waitBeforeUpdateMs)
+        [HttpPatch]
+        [Route("add-amount/{accountId}/{amount}/{waitBeforeUpdateMs}")]
+        public async Task<IHttpActionResult> AddAmount(int accountId, decimal amount, int waitBeforeUpdateMs)
         {
-            await efTestsService.TestConccurencyUpdate(amount, waitBeforeUpdateMs);
+            await efTestsService.AddAmount(accountId, amount, waitBeforeUpdateMs);
+            return Ok();
+        }
+
+        [HttpPatch]
+        [Route("update-product/{productId}/{quantity}/{waitBeforeUpdateMs}")]
+        public async Task<IHttpActionResult> UpdateQuantity(int productId, int quantity, int waitBeforeUpdateMs)
+        {
+            await efTestsService.UpdateProduct(productId, quantity, waitBeforeUpdateMs);
             return Ok();
         }
     }
