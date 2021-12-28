@@ -23,7 +23,7 @@ namespace SignalRChatV1.Controllers
             messageService = _messageService;
         }
 
-        [HttpPost("message")]
+        [HttpPost]
         public async Task<IActionResult> SendMessage(MessageDto message)
         {
             await messageService.SendMessage(message);
