@@ -9,7 +9,7 @@ namespace SignalRChatV1.Hubs
 {
     public class ChatHub : Hub
     {
-        public Task SendMessage(Message message)
+        public Task NewMessage(Message message)
         {
             return Clients.All.SendAsync("ReceiveMessage", message);
         }

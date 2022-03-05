@@ -22,6 +22,7 @@ namespace NetCoreExampleApi.BusinessLogic
             {
                 BankAccount bankAccount = dbContext.BankAccount.Where(x => x.Id == bankAccountId).First();
                 bankAccount.Balance += amount;
+                bankAccount.LastUpdateDate = DateTime.Now;
                 await Task.Delay(waitBeforeUpdateMs);
                 await dbContext.SaveChangesAsync();
             }

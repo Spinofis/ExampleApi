@@ -12,6 +12,7 @@ namespace Database
         public string Number { get; set; }
 
         public decimal Balance { get; set; }
+        public DateTime LastUpdateDate { get; set; }
         [Timestamp]
         public byte[] RowVersion { get; set; }
     }

@@ -1,0 +1,32 @@
+2022-01-22 12:37:13.441 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-22 12:37:13.528 +01:00 [INF] Hosting environment: CustomEnv
+2022-01-22 12:37:13.529 +01:00 [INF] Content root path: C:\Nauka\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2022-01-22 12:37:14.375 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/favicon.ico  
+2022-01-22 12:37:14.403 +01:00 [INF] Request finished in 28.244ms 404 
+2022-01-22 12:37:25.964 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/  
+2022-01-22 12:37:25.973 +01:00 [INF] Request finished in 2.4936ms 301 
+2022-01-22 12:37:25.974 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/index.html  
+2022-01-22 12:37:26.026 +01:00 [INF] Request finished in 52.6743ms 200 text/html;charset=utf-8
+2022-01-22 12:37:26.041 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger-ui.css  
+2022-01-22 12:37:26.042 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger-ui-bundle.js  
+2022-01-22 12:37:26.042 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger-ui-standalone-preset.js  
+2022-01-22 12:37:26.083 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-01-22 12:37:26.087 +01:00 [INF] Request finished in 45.4973ms 200 text/css
+2022-01-22 12:37:26.089 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-01-22 12:37:26.090 +01:00 [INF] Request finished in 47.2831ms 200 application/javascript
+2022-01-22 12:37:26.130 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-01-22 12:37:26.131 +01:00 [INF] Request finished in 88.2872ms 200 application/javascript
+2022-01-22 12:37:26.373 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger/v1/swagger.json  
+2022-01-22 12:37:26.392 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/favicon-32x32.png  
+2022-01-22 12:37:26.393 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-01-22 12:37:26.394 +01:00 [INF] Request finished in 1.1244ms 200 image/png
+2022-01-22 12:37:26.456 +01:00 [INF] Request finished in 82.6312ms 200 application/json;charset=utf-8
+2022-01-22 12:37:36.743 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/api/TestConfig/config/get-children-test  
+2022-01-22 12:37:36.745 +01:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.TestConfigController.GetChildrenTest (NetCoreExampleApi)'
+2022-01-22 12:37:36.747 +01:00 [INF] Route matched with {action = "GetChildrenTest", controller = "TestConfig"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetChildrenTest() on controller NetCoreExampleApi.Controllers.TestConfigController (NetCoreExampleApi).
+2022-01-22 12:37:36.761 +01:00 [INF] Executing action method NetCoreExampleApi.Controllers.TestConfigController.GetChildrenTest (NetCoreExampleApi) - Validation state: "Valid"
+2022-01-22 12:37:36.765 +01:00 [INF] Executed action method NetCoreExampleApi.Controllers.TestConfigController.GetChildrenTest (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6926ms.
+2022-01-22 12:37:36.765 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-01-22 12:37:36.766 +01:00 [INF] Executed action NetCoreExampleApi.Controllers.TestConfigController.GetChildrenTest (NetCoreExampleApi) in 18.7236ms
+2022-01-22 12:37:36.766 +01:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.TestConfigController.GetChildrenTest (NetCoreExampleApi)'
+2022-01-22 12:37:36.766 +01:00 [INF] Request finished in 22.739ms 200 text/plain; charset=utf-8
