@@ -12,5 +12,7 @@ namespace Database
         public DbSet<BankAccount> BankAccount { get; set; }
         public DbSet<Product> Product { get; set; }
 
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }

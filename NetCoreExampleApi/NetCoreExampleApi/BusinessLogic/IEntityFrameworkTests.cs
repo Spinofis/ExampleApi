@@ -9,5 +9,9 @@ namespace NetCoreExampleApi.BusinessLogic
     {
         Task UpdateProduct(int productId, int quantity, int waitBeforeUpdateMs);
         Task AddAmount(int accountId, decimal amount, int waitBeforeUpdateMs);
+
+        Task StreamingVsBuffering();
+
+        Task TestCascadeDelete()
     }
 }

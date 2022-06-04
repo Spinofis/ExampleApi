@@ -28,5 +28,13 @@ namespace NetFrameworkExampleApi.Controllers
             await efTestsService.UpdateProduct(productId, quantity, waitBeforeUpdateMs);
             return Ok();
         }
+
+        [HttpGet]
+        [Route("fixup-query")]
+        public async Task<IHttpActionResult> TestFixUpQuery()
+        {
+            efTestsService.TestFixUpQuery();
+            return Ok();
+        }
     }
 }

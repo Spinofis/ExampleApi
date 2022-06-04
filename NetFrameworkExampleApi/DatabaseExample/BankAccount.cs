@@ -14,6 +14,9 @@ namespace DatabaseExample
         public string Number { get; set; }
 
         public decimal Balance { get; set; }
+
+        public Customer Customer { get; set; }
+
         [Timestamp]
         public byte[] RowVersion { get; set; }
     }

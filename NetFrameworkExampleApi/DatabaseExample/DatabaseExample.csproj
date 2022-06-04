@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="Migrations\202112081747542_Product.cs" />
     <Compile Include="Migrations\202112081747542_Product.designer.cs">
       <DependentUpon>202112081747542_Product.cs</DependentUpon>
@@ -59,6 +60,14 @@
     <Compile Include="Migrations\202112081751075_Product2.cs" />
     <Compile Include="Migrations\202112081751075_Product2.designer.cs">
       <DependentUpon>202112081751075_Product2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204271608137_Customer.cs" />
+    <Compile Include="Migrations\202204271608137_Customer.designer.cs">
+      <DependentUpon>202204271608137_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204271616098_Customer2.cs" />
+    <Compile Include="Migrations\202204271616098_Customer2.designer.cs">
+      <DependentUpon>202204271616098_Customer2.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="ExampleContext.cs" />
@@ -89,6 +98,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112081751075_Product2.resx">
       <DependentUpon>202112081751075_Product2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204271608137_Customer.resx">
+      <DependentUpon>202204271608137_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204271616098_Customer2.resx">
+      <DependentUpon>202204271616098_Customer2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

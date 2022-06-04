@@ -1,0 +1,123 @@
+2022-05-29 12:43:39.009 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-29 12:43:39.068 +02:00 [INF] Hosting environment: CustomEnv
+2022-05-29 12:43:39.068 +02:00 [INF] Content root path: C:\Nauka\ASP NET API\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2022-05-29 12:43:39.078 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/index.html  
+2022-05-29 12:43:39.358 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js  
+2022-05-29 12:43:39.361 +02:00 [INF] Request finished in 286.0697ms 200 text/html;charset=utf-8
+2022-05-29 12:43:39.362 +02:00 [INF] Request finished in 3.6653ms 200 application/javascript; charset=utf-8
+2022-05-29 12:43:40.360 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger/v1/swagger.json  
+2022-05-29 12:43:40.453 +02:00 [INF] Request finished in 93.9879ms 200 application/json;charset=utf-8
+2022-05-29 12:44:10.638 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-29 12:44:10.655 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/index.html  
+2022-05-29 12:44:10.677 +02:00 [INF] Hosting environment: CustomEnv
+2022-05-29 12:44:10.677 +02:00 [INF] Content root path: C:\Nauka\ASP NET API\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2022-05-29 12:44:10.862 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js  
+2022-05-29 12:44:10.864 +02:00 [INF] Request finished in 211.8959ms 200 text/html;charset=utf-8
+2022-05-29 12:44:10.865 +02:00 [INF] Request finished in 3.2477ms 200 application/javascript; charset=utf-8
+2022-05-29 12:44:11.789 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger/v1/swagger.json  
+2022-05-29 12:44:11.890 +02:00 [INF] Request finished in 101.1713ms 200 application/json;charset=utf-8
+2022-05-29 12:44:21.058 +02:00 [INF] Request starting HTTP/2.0 POST https://localhost:44394/api/EntityFrameworkTests/StreamingVsBuffering  0
+2022-05-29 12:44:21.064 +02:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi)'
+2022-05-29 12:44:21.086 +02:00 [INF] Route matched with {action = "StreamingVsBuffering", controller = "EntityFrameworkTests"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StreamingVsBuffering() on controller NetCoreExampleApi.Controllers.EntityFrameworkTestsController (NetCoreExampleApi).
+2022-05-29 12:44:21.356 +02:00 [INF] Executing action method NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi) - Validation state: "Valid"
+2022-05-29 12:44:21.861 +02:00 [WRN] No type was specified for the decimal property 'Balance' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-05-29 12:44:21.945 +02:00 [INF] Entity Framework Core 5.0.12 initialized 'ExampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-29 12:44:23.087 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query1
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:44:23.108 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query2
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:44:23.112 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query3
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:44:23.117 +02:00 [INF] Executed action method NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkResult in 1754.4362ms.
+2022-05-29 12:44:23.121 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-29 12:44:23.124 +02:00 [INF] Executed action NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi) in 2034.5425ms
+2022-05-29 12:44:23.124 +02:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi)'
+2022-05-29 12:44:23.127 +02:00 [INF] Request finished in 2070.2043ms 200 
+2022-05-29 12:47:22.510 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-29 12:47:22.538 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/index.html  
+2022-05-29 12:47:22.562 +02:00 [INF] Hosting environment: CustomEnv
+2022-05-29 12:47:22.562 +02:00 [INF] Content root path: C:\Nauka\ASP NET API\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2022-05-29 12:47:22.757 +02:00 [INF] Request finished in 223.5882ms 200 text/html;charset=utf-8
+2022-05-29 12:47:22.759 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js  
+2022-05-29 12:47:22.776 +02:00 [INF] Request finished in 16.4001ms 200 application/javascript; charset=utf-8
+2022-05-29 12:47:23.669 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger/v1/swagger.json  
+2022-05-29 12:47:23.755 +02:00 [INF] Request finished in 78.3309ms 200 application/json;charset=utf-8
+2022-05-29 12:47:29.705 +02:00 [INF] Request starting HTTP/2.0 POST https://localhost:44394/api/EntityFrameworkTests/StreamingVsBuffering  0
+2022-05-29 12:47:29.722 +02:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi)'
+2022-05-29 12:47:29.747 +02:00 [INF] Route matched with {action = "StreamingVsBuffering", controller = "EntityFrameworkTests"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StreamingVsBuffering() on controller NetCoreExampleApi.Controllers.EntityFrameworkTestsController (NetCoreExampleApi).
+2022-05-29 12:47:29.929 +02:00 [INF] Executing action method NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi) - Validation state: "Valid"
+2022-05-29 12:47:30.394 +02:00 [WRN] No type was specified for the decimal property 'Balance' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-05-29 12:47:30.485 +02:00 [INF] Entity Framework Core 5.0.12 initialized 'ExampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-29 12:47:31.005 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query1
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:47:31.025 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query2
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:47:31.031 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query3
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:47:31.037 +02:00 [INF] Executed action method NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkResult in 1100.6904ms.
+2022-05-29 12:47:31.041 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-29 12:47:31.044 +02:00 [INF] Executed action NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi) in 1293.1988ms
+2022-05-29 12:47:31.044 +02:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi)'
+2022-05-29 12:47:31.047 +02:00 [INF] Request finished in 1343.5778ms 200 
+2022-05-29 12:49:34.736 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-29 12:49:34.754 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/index.html  
+2022-05-29 12:49:34.773 +02:00 [INF] Hosting environment: CustomEnv
+2022-05-29 12:49:34.773 +02:00 [INF] Content root path: C:\Nauka\ASP NET API\ExampleApi\NetCoreExampleApi\NetCoreExampleApi
+2022-05-29 12:49:34.950 +02:00 [INF] Request finished in 199.6027ms 200 text/html;charset=utf-8
+2022-05-29 12:49:35.589 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js  
+2022-05-29 12:49:35.594 +02:00 [INF] Request finished in 5.6039ms 200 application/javascript; charset=utf-8
+2022-05-29 12:49:36.131 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44394/swagger/v1/swagger.json  
+2022-05-29 12:49:36.216 +02:00 [INF] Request finished in 85.5018ms 200 application/json;charset=utf-8
+2022-05-29 12:53:33.859 +02:00 [INF] Request starting HTTP/2.0 POST https://localhost:44394/api/EntityFrameworkTests/StreamingVsBuffering  0
+2022-05-29 12:53:33.887 +02:00 [INF] Executing endpoint 'NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi)'
+2022-05-29 12:53:33.910 +02:00 [INF] Route matched with {action = "StreamingVsBuffering", controller = "EntityFrameworkTests"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StreamingVsBuffering() on controller NetCoreExampleApi.Controllers.EntityFrameworkTestsController (NetCoreExampleApi).
+2022-05-29 12:53:34.092 +02:00 [INF] Executing action method NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi) - Validation state: "Valid"
+2022-05-29 12:53:34.544 +02:00 [WRN] No type was specified for the decimal property 'Balance' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-05-29 12:53:34.628 +02:00 [INF] Entity Framework Core 5.0.12 initialized 'ExampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-05-29 12:53:35.145 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query1
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:53:35.165 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query2
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:53:35.171 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Query3
+
+SELECT [p].[PostId], [p].[BlogId], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[Title] IS NOT NULL AND ([p].[Title] LIKE N'A%')
+2022-05-29 12:53:35.177 +02:00 [INF] Executed action method NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi), returned result Microsoft.AspNetCore.Mvc.OkResult in 1078.6834ms.
+2022-05-29 12:53:35.181 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-29 12:53:35.184 +02:00 [INF] Executed action NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi) in 1270.931ms
+2022-05-29 12:53:35.184 +02:00 [INF] Executed endpoint 'NetCoreExampleApi.Controllers.EntityFrameworkTestsController.StreamingVsBuffering (NetCoreExampleApi)'
+2022-05-29 12:53:35.188 +02:00 [INF] Request finished in 1367.1128ms 200 

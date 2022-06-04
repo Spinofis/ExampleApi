@@ -29,5 +29,12 @@ namespace NetCoreExampleApi.Controllers
             await efTests.UpdateProduct(productId, quantity, waitBeforeUpdateMs);
             return Ok();
         }
+        
+        [HttpPost("StreamingVsBuffering")]
+        public async Task<IActionResult> StreamingVsBuffering()
+        {
+            await efTests.StreamingVsBuffering();
+            return Ok();
+        }
     }
 }

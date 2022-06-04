@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NetCoreExampleApi.BusinessLogic;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -30,7 +31,9 @@ namespace NetCoreExampleApi
         public static void AddExampleDbContext(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ExampleContext>
-                (options => options.UseSqlServer(configuration.GetConnectionString("ExampleConnection")));
+                (options => options
+                    .UseSqlServer(configuration.GetConnectionString("ExampleConnection"))
+                    .LogTo(message => Debug.WriteLine(message), Microsoft.Extensions.Logging.LogLevel.Information));
         }
     }
 }

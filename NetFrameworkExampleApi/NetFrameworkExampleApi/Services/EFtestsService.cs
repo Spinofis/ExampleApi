@@ -46,5 +46,12 @@ namespace NetFrameworkExampleApi.BL
                 throw;
             }
         }
+
+        public async void TestFixUpQuery()
+        {
+            var bankAccounts = dbContext.BankAccounts.ToList();
+
+            var customers = dbContext.Customers.ToList();
+        }
     }
 }

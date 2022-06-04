@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "",
 			"environmentVariables": {
 				"TEST_ENV": "TEST_ENV",
 				"ASPNETCORE_ENVIRONMENT": "CustomEnv"
@@ -21,7 +21,7 @@
     "NetCoreExampleApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "",
 			"environmentVariables": {
 				"ASPNETCORE_ENVIRONMENT": "CustomEnv"
 			},
